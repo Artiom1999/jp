@@ -8,18 +8,24 @@ let vienoKepaloSavikaina = 2;
 let vienoKepaloPardavimoKaina = 4;
 let dienosUzsakymas = 60;
 
+// Darbuotojai iskepa kepalu per diena
 let iskepaKepaluPerDiena =
   iskepaKepaluPerValandaVienasDarbuotojas * dabuotojuSkaicius * darboValandos;
 
+// Savikaina visu iskeptu kepalu per visa diena.
 let visuKepaluSavikaina = vienoKepaloSavikaina * iskepaKepaluPerDiena;
 
+// Pajamos pardavus visus kepalus per diena.
 let pajamosPardavusKepalus = vienoKepaloPardavimoKaina * iskepaKepaluPerDiena;
 
+// Gautas pelnas is parduotu kepalu per visa diena.
 let gautasPelnas = pajamosPardavusKepalus - visuKepaluSavikaina;
 
+// uzsakymo pajamos, savikaina ,pelanas.
 let uzsakymoPajamos = dienosUzsakymas * vienoKepaloPardavimoKaina;
 let uzsakymoSavikaina = dienosUzsakymas * vienoKepaloSavikaina;
 let uzsakymoPelnas = uzsakymoPajamos - uzsakymoSavikaina;
+
 // 1.
 console.log(
   `Per viena darbo diena kepykla iskeps: ${iskepaKepaluPerDiena} kepalu`
@@ -45,6 +51,12 @@ console.log(`Uzsakymo pelnas butu: ${uzsakymoPelnas} euru`);
 
 // 1.Užduotis: Kurjerio pristatymo patikrinimas
 
-let uzsakymoLaikas = 0 > 15;
+let uzsakymoLaikas = 15;
+
+if (uzsakymoLaikas > 16) {
+  console.log('preke yra sandelyje');
+} else {
+  console.log('prekes nera sandelyje');
+}
 
 // 2. Užduotis: Amžiaus kategorijos nustatymas
