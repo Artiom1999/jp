@@ -45,3 +45,11 @@ console.log(2 < 2); //false
 
 console.log(2 <= 2); // true
 console.log(2 <= 1); // false
+
+// ternary operator
+// salyga? true : false
+
+let age = 18;
+let ageStatus = age >= 18 ? 'adult' : 'child';
+
+console.log(ageStatus); // adult
