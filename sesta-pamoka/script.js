@@ -97,3 +97,32 @@ if (vidurkis && 10 >= 10) {
 } else if (vidurkis && 5 <= 8) {
   console.log('netinka');
 }
+
+// 15 sukurkite du skaiciu. Patikrinkite (naudojant 4 askirus if'us)
+
+let pirmasSkaicius = 10;
+let antrasSkaicius = 8;
+
+if (pirmasSkaicius > antrasSkaicius || pirmasSkaicius === 0) {
+  console.log('salyga yra teisinga');
+} else {
+  console.log('salyga yra neteisinga');
+}
+
+if (antrasSkaicius > pirmasSkaicius || antrasSkaicius === 0) {
+  console.log('salyga yra teisinga');
+} else {
+  console.log('salyga yra neteisinga');
+}
+
+if (pirmasSkaicius > antrasSkaicius && pirmasSkaicius === 20) {
+  console.log('salyga yra teisinga');
+} else {
+  console.log('salyga yra neteisinga');
+}
+
+if (antrasSkaicius > pirmasSkaicius && antrasSkaicius < 100) {
+  console.log('salyga yra teisinga');
+} else {
+  console.log('salyga yra neteisinga');
+}
