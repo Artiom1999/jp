@@ -107,3 +107,4 @@ switch (sviesoforas) {
     alert('Stovek!');
     break;
 }
+// end
