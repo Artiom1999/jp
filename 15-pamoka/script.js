@@ -215,3 +215,5 @@ let studentas = {
 for (const index in studentas) {
   console.log(studentas[index]);
 }
+
+// Artiom
