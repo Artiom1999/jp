@@ -1,0 +1,14 @@
+#color-box {
+  display: flex;
+  align-items: center;
+}
+
+#red,
+#green,
+#blue,
+#yellow,
+#pink {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
